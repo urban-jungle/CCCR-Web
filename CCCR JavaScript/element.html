@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        const contentDiv = document.getElementById("content")
+
+        const heading = document.createElement('h1')
+        heading.textContent = "안녕하세요"
+
+        const paragraph = document.createElement('p')
+        paragraph.textContent = "요소를 직접 만들어서 페이지를 구성합니다."
+
+        const list = document.createElement('ul')
+        
+        const item1 = document.createElement('li')
+        item1.textContent = "리스트도 만들 수 있습니다."
+
+        item1.addEventListener('click', 
+            function(){
+                alert("클릭하지 마시오.")
+            }
+        )
+
+        list.appendChild(item1)
+
+        contentDiv.appendChild(heading)
+        contentDiv.appendChild(paragraph)
+        contentDiv.appendChild(list)
+    </script>
+</body>
+</html>

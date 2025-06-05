@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const aEl = document.createElement("a")
+        document.body.append(aEl)
+
+        const txtEl = document.createTextNode("길벗")
+        document.querySelectors("a").appendChild(txtEl)
+
+        const hrefAttr = document.createAttribute("href")
+        hrefAttr.value = "https://www.gilbut.co.kr"
+        document.querySelector("a").setAttributeNode(hrefAttr)
+    </script>
+</body>
+</html>

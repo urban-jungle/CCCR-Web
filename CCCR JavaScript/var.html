@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var
+        // ESS(옛 자바스크립트)부터 사용한 방식
+        // 중복 선언 가능
+        // 호이스팅 시 선언을 끌어올려줌, 초기화는 끌어올리지 않음
+        console.log(x); // x가 선언되어 있는 것을 감지하지만 값을 감지하진 못함
+        var x = 10;
+        console.log(x);
+
+        var x = 20; // 중복 선언
+        console.log(x);
+    </script>
+</body>
+</html>

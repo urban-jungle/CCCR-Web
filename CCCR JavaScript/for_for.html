@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 중첩 for문에서는 내부 for문이 끝나지 않으면 바깥 for문은 움직이지 않음
+        for(let i = 0; i < 2; i++){
+            console.log(`i: ${i}`);
+            for(let k = 0; k < 2; k++){
+                console.log(`k: ${k}`);
+            }
+        }
+    </script>
+</body>
+</html>

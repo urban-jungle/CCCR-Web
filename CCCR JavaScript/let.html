@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let은 중복 선언 불가
+        // 선언 전에 접근하려 하면 에러 발생
+        // 에러가 발생하면 아래 코드들도 실행되지 않기 때문에 try 구문을 사용하여 에러 발생을 막아줌
+        try {
+            console.log(a);
+        }
+        catch(err) {
+            console.log(err.message);
+        }
+
+        let a = 20;
+        console.log(a);
+
+        // 중복 선언 불가
+        // let a = 10;
+
+        // 최초 선언 후에 값을 바꾸는 것은 가능
+        a = 10;
+        console.log(a);
+    </script>
+</body>
+</html>
